@@ -1,12 +1,12 @@
 # BusLine
 仿《车来了》公交线路自定义View，根据线路数据绘制View并控制滑动手势。
 
-* ### 效果
+### 效果
 先看最终运行效果：
 
 ![效果图](./captures/bus_line.gif)
 
-* ### 使用
+### 使用
 
 XML布局：
 
@@ -42,12 +42,12 @@ view.setOnBusStationClickListener(this); // 设置公交站点的点击事件
 ```
 
 
-* ### 实现原理
+### 实现原理
 
 站点信息使用android系统中的绘图部分API，位置是通过大小及顺序计算位置坐标。手势滑动使用的是android系统中的Touch事件控制及Scroller滚动实现。
 
 
-* ### 关于
+### 关于
 
 [jacpy](http://www.jacpy.com)
 
