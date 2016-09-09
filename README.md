@@ -8,7 +8,7 @@
 
 ### 使用
 
-XML布局：
+* XML布局：
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -33,7 +33,7 @@ XML布局：
 </RelativeLayout>
 
 ```
-在代码中使用：
+* 在代码中使用：
 
 ```java
 BusLineView view = (BusLineView) findViewById(R.id.bus_line);
@@ -50,4 +50,7 @@ view.setOnBusStationClickListener(this); // 设置公交站点的点击事件
 ### 关于
 
 [jacpy](http://www.jacpy.com)
+
+### License
+本项目遵守Apache 2.0 license。
 
