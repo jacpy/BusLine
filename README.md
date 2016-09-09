@@ -3,6 +3,7 @@
 
 * ### 效果
 先看最终运行效果：
+
 ![效果图](./captures/bus_line.gif)
 
 * ### 使用
@@ -40,9 +41,11 @@ view.setBusLineData(initData()); // 设置数据
 view.setOnBusStationClickListener(this); // 设置公交站点的点击事件
 ```
 
+
 * ### 实现原理
 
 站点信息使用android系统中的绘图部分API，位置是通过大小及顺序计算位置坐标。手势滑动使用的是android系统中的Touch事件控制及Scroller滚动实现。
+
 
 * ### 关于
 
