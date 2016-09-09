@@ -19,14 +19,14 @@
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_vertical_margin"
     >
 
     <com.jacpy.busline.widget.BusLineView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/bus_line"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
         android:background="@android:color/darker_gray"
         />
 
@@ -41,6 +41,8 @@ view.setBusLineData(initData()); // 设置数据
 view.setOnBusStationClickListener(this); // 设置公交站点的点击事件
 ```
 
+* 性能
+在2013年的机型MOTO G XT1032机子上运行，同时刷新96个公交站点数据，耗时平均7ms左右。
 
 ### 实现原理
 

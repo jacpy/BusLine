@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.2"
 
     defaultConfig {
-        applicationId "com.jacpy.sb"
+        applicationId "com.jacpy.busline.demo"
         minSdkVersion 15
         targetSdkVersion 23
         versionCode 1
