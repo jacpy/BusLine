@@ -164,6 +164,75 @@ public class BusLineView extends View {
         }
     }
 
+    /**
+     * 设置公交图标
+     * @param d Drawable
+     */
+    public void setBusDrawable(Drawable d) {
+        mBus = d;
+        mBusStationWidth = d.getIntrinsicWidth() << 1;
+    }
+
+    /**
+     * 设置小公交图标
+     * @param d Drawable
+     */
+    public void setBusSmallDrawable(Drawable d) {
+        mBusSmall = d;
+    }
+
+    /**
+     * 设置当前位置显示的图标
+     * @param d Drawable
+     */
+    public void setCurrentPositionDrawable(Drawable d) {
+        mCurrentPosition = d;
+    }
+
+    /**
+     * 设置定位的图标
+     * @param d Drawable
+     */
+    public void setCurrentLocationDrawable(Drawable d) {
+        mCurrentPositionLocation = d;
+    }
+
+    /**
+     * 设置有地铁标识的公交站图标
+     * @param d Drawable
+     */
+    public void setMetroStationDrawable(Drawable d) {
+        mRailway = d;
+    }
+
+    /**
+     * 设置不交通状况的颜色
+     * @param normal 正常畅通的颜色
+     * @param busy 交通繁忙的颜色
+     * @param block 交通拥堵的颜色
+     */
+    public void setTrafficColor(int normal, int busy, int block) {
+        mColorNormal = normal;
+        mColorBusy = busy;
+        mColorBlock = block;
+    }
+
+    /**
+     * 设置路线的颜色
+     * @param pass 到当前站点的颜色
+     * @param unreach 当前站点以后和颜色
+     * @param selected 选中公交站时的颜色
+     */
+    public void setBusLineColor(int pass, int unreach, int selected) {
+        mColorPass = pass;
+        mColorUnreach = unreach;
+        mSelectedColor = selected;
+    }
+
+    /**
+     * 设置公交站被点击的监听器
+     * @param l listener
+     */
     public void setOnBusStationClickListener(OnBusStationClickListener l) {
         mOnBusStationClickListener = l;
     }

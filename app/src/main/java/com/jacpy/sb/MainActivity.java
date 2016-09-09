@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity implements BusLineView.OnBus
         setContentView(R.layout.activity_main);
 
         BusLineView view = (BusLineView) findViewById(R.id.bus_line);
-        view.setBusLineData(initData());
-        view.setOnBusStationClickListener(this);
+        view.setBusLineData(initData()); // 设置数据
+        view.setOnBusStationClickListener(this); // 设置公交站点的点击事件
     }
 
     @Override
