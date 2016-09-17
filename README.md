@@ -42,7 +42,7 @@ view.setOnBusStationClickListener(this); // 设置公交站点的点击事件
 ```
 
 * 性能
-在2013年的机型MOTO G XT1032机子上运行，同时刷新96个公交站点数据，耗时平均7ms左右。
+在2013年的机型MOTO G XT1032机子上运行，同时刷新96个公交站点数据，onDraw()方法耗时平均7ms左右。
 
 ### 实现原理
 
